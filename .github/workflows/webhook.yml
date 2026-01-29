@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send event to webhook server
+      - name: Send event to webhook server 2
         run: |
           curl -X POST https://unlent-bobbye-unfrustratable.ngrok-free.dev/webhook \
           -H "Content-Type: application/json" \
