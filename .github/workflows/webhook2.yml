@@ -1,0 +1,22 @@
+name: Send Event to Webhook
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send event to webhook server
+        run: |
+          curl -X POST https://unlent-bobbye-unfrustratable.ngrok-free.dev/webhook \
+          -H "Content-Type: application/json" \
+          -d '{
+            "event": "github_action_triggered",
+            "repository": "${{ github.repository }}",
+            "actor": "${{ github.actor }}",
+            "ref": "${{ github.ref }}",
+            "commit": "${{ github.sha }}"
+          }'
