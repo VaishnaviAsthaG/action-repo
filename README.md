@@ -7,4 +7,6 @@ A basic workflow is configured that runs on every push and prints a simple messa
 
 Purpose:
 - To show understanding of GitHub Actions
-- To demonstrate CI workflow setup
+-To demonstrate CI workflow setup
+
+testing 
