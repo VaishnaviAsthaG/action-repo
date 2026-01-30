@@ -9,4 +9,4 @@ Purpose:
 - To show understanding of GitHub Actions
 -To demonstrate CI workflow setup
 
-testing 
+Testing
